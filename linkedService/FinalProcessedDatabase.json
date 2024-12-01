@@ -1,0 +1,29 @@
+{
+	"name": "FinalProcessedDatabase",
+	"properties": {
+		"description": "Stores the data in mysql which is present in gold layer ",
+		"annotations": [],
+		"type": "MySql",
+		"typeProperties": {
+			"server": "localhost",
+			"port": 3306,
+			"database": "hospital_final_dataset",
+			"username": "root",
+			"sslMode": 1,
+			"useSystemTrustStore": 0,
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "hosprojectvault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "datapass"
+			},
+			"driverVersion": "v2"
+		},
+		"connectVia": {
+			"referenceName": "onprem-clould-hos-dataflow",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
