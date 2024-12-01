@@ -1,0 +1,9 @@
+{
+	"name": "adf-project-hospital",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e75da4ea-b594-4509-95de-140d301a90eb",
+		"tenantId": "aac29dfc-09fb-401d-b592-26cadcb93344"
+	}
+}
