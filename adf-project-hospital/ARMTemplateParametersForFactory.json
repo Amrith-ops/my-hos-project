@@ -4,6 +4,18 @@
 	"parameters": {
 		"factoryName": {
 			"value": "adf-project-hospital"
+		},
+		"hosprojectvault_properties_typeProperties_baseUrl": {
+			"value": "https://hos-project-keyvault2.vault.azure.net/"
+		},
+		"FinalProcessedDatabase_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"FinalProcessedDatabase_properties_typeProperties_database": {
+			"value": "hospital_final_dataset"
+		},
+		"FinalProcessedDatabase_properties_typeProperties_username": {
+			"value": "root"
 		}
 	}
 }

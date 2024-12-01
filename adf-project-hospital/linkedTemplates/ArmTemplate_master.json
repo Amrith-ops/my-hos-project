@@ -7,6 +7,22 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-project-hospital"
 		},
+		"hosprojectvault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://hos-project-keyvault2.vault.azure.net/"
+		},
+		"FinalProcessedDatabase_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost"
+		},
+		"FinalProcessedDatabase_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "hospital_final_dataset"
+		},
+		"FinalProcessedDatabase_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "root"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +49,18 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"hosprojectvault_properties_typeProperties_baseUrl": {
+						"value": "[parameters('hosprojectvault_properties_typeProperties_baseUrl')]"
+					},
+					"FinalProcessedDatabase_properties_typeProperties_server": {
+						"value": "[parameters('FinalProcessedDatabase_properties_typeProperties_server')]"
+					},
+					"FinalProcessedDatabase_properties_typeProperties_database": {
+						"value": "[parameters('FinalProcessedDatabase_properties_typeProperties_database')]"
+					},
+					"FinalProcessedDatabase_properties_typeProperties_username": {
+						"value": "[parameters('FinalProcessedDatabase_properties_typeProperties_username')]"
 					}
 				}
 			},
