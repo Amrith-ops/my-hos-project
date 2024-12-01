@@ -1,0 +1,11 @@
+{
+	"name": "hosprojectvault",
+	"properties": {
+		"description": "lined service used to retrieve the secrets",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://hos-project-keyvault2.vault.azure.net/"
+		}
+	}
+}
