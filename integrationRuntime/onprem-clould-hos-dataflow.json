@@ -1,0 +1,7 @@
+{
+	"name": "onprem-clould-hos-dataflow",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Runtime used for transferring data between the windows on-prem machine and cloud storage account"
+	}
+}
